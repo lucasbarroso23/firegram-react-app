@@ -1,5 +1,6 @@
 import React from 'react';
 import { useState } from 'react';
+import ProgressBar from './ProgressBar';
 
 const UploadForm = () => {
 
@@ -18,16 +19,18 @@ const UploadForm = () => {
             setFile(null);
             setError('Please select an valid image file (png or jpeg)');
         }
-
-        console.log(selected);
     }
 
     return (
         <form >
-            <input type="file" onChange={changeHandler} />
+            <label >
+                <input type="file" onChange={changeHandler} />
+                <span>+</span>
+            </label>
             <div className="output">
                 {error && <div className="error" > {error} </div>}
                 {file && <div  > {file.name} </div>}
+                {file && <ProgressBar file={file} setFile={setFile} />}
             </div>
         </form>
     )
