@@ -1,4 +1,6 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Você pode acessar esse projeto através desse [link](https://firegram-react-app.vercel.app/)
+
+![Screenshot_2](https://user-images.githubusercontent.com/55262061/94759094-62e27f80-0375-11eb-937a-f28cf413cf10.png)
 
 ## Available Scripts
 
